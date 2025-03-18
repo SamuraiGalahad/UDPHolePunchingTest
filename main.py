@@ -1,11 +1,8 @@
+from config import LOCAL_PORT, SERVER_PORT, SERVER_IP
 import random
 import socket
 import threading
 import time
-
-SERVER_IP = "ip"
-SERVER_PORT = 9999
-LOCAL_PORT = 6000
 
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 client.bind(("0.0.0.0", LOCAL_PORT))
